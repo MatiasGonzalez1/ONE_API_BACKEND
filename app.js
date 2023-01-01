@@ -3,20 +3,20 @@
 import express from "express";
 import charactersRoutes from './routes/characters.routes.js';
 import indexRoutes from './routes/index.routes.js'
-const cors = require('cors')
+import cors from "cors";
+import { ping } from "./controllers/index.controller.js";
 
-app.use(cors())
+
 const app = express();
 
+app.use(cors());
 app.use(express.json())
 
 //Conexion a la db
 app.use(indexRoutes)
 
 //Rutas
-// app.use('/', (req, res)=>{
-//   res.send('Welcome to The One API')
-// })
+app.use('/', ping)
 
 app.use('/api',charactersRoutes)
 

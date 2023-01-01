@@ -1,6 +1,4 @@
-import {pool} from '../db.js'
 
 export const ping = async (req,res)=> {
-  const [result] = await pool.query('SELECT * FROM characters')
-  res.json(result)
+  res.send('Welcome to the ONE API for more info try copy and paste at final of navigator the next url /api/characters and use free')
 }
