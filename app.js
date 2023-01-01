@@ -3,8 +3,9 @@
 import express from "express";
 import charactersRoutes from './routes/characters.routes.js';
 import indexRoutes from './routes/index.routes.js'
+const cors = require('cors')
 
-
+app.use(cors())
 const app = express();
 
 app.use(express.json())
