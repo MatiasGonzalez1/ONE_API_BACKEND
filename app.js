@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(indexRoutes)
 
 //Rutas
-app.use('/', ping)
+// app.use('/', ping)
 
 app.use('/api',charactersRoutes)
 
