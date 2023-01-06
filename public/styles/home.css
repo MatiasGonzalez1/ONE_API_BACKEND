@@ -76,9 +76,10 @@ body {
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url(https://images.alphacoders.com/807/807002.png);
-    background-position: center top;
+    background-image: url('../img/fondo.webp');
+    background-position:center;
 	background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .navTrigger {
