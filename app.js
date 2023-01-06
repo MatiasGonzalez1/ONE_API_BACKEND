@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json())
 
 // Determinacion de folder 'public' como archivos estaticos
-app.use(express.static("./public")); 
+app.use(express.static("public")); 
 
 app.use('/', indexRoutes)
 
