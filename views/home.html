@@ -4,11 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles/home.css">
+  <title>Bienvenido</title>
 </head>
 <body>
-  <h1>
-    Welcome to the ONE API for more info try copy and paste at final of navigator the next url /api/characters and use free
-  </h1>
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">ONE API</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home">
+</section>
+<div style="height: 1000px">
+    <!-- just to make scrolling effect possible -->
+  <h2 class="myH2">What is the one api ?</h2>
+  <p class="myP">The one api its a free api for developers and enthusiasts from the anime</p>
+    <p class="myP">
+    Uso: Unicamente debes agregar a ésta url /api/characters para poder verla en su totalidad, proximamente estaremos documentandola para un mejor uso.
+    </p>
+</div>
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./js/home.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
 </body>
 </html>
